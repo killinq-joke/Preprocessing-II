@@ -234,6 +234,9 @@ nav .logo {
   .home .content-section .three {
     order: 3;
   }
+  .home .content-section p {
+    width: 90%;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
@@ -251,10 +254,16 @@ nav .logo {
 @media (max-width: 500px) {
   .home .content-section .img-content {
     width: 100%;
+    padding: 0;
   }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -271,6 +280,12 @@ nav .logo {
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    display: flex;
+    flex-flow: column;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;

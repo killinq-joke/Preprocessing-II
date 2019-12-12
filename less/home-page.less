@@ -9,7 +9,7 @@
     @media @mobile {
       display:flex;
          flex-flow: column;
-
+        
          .one {
            order: 1;
          }
@@ -20,6 +20,10 @@
 
          .three {
            order: 3;
+         }
+         
+         p {
+           width: 90%;
          }
 
   
@@ -40,10 +44,14 @@
       
       @media @mobile {
         width: 100%;
+        padding: 0;
       }
 
       img {
         border-radius: 10px;
+        @media @mobile {
+          width: 100%;
+        }
       }
       
     }
@@ -67,6 +75,11 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile {
+      display:flex;
+         flex-flow: column;
+         
+    }
 
     img {
       border-radius: 10px;
