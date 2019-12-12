@@ -168,6 +168,27 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  border-bottom: 1.5px dashed lightgray;
+}
+nav .buttons a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: black;
+  padding: 0 20px;
+}
+nav .buttons a:hover {
+  color: red;
+}
+nav .logo {
+  font-size: 3rem;
+  padding: 0 10px;
+  font-family: 'Indie Flower', cursive;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
