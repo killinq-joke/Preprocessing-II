@@ -1,10 +1,17 @@
 // Mixins in here
 
-.button-mixin(@color, @hovercolor) {
+.top-button-mixin(@color, @hovercolor) {
     text-decoration: none;
     color: @color;
 
     &:hover {
         color: @hovercolor;
     }
+}
+
+.button-mixin(@color, @bg-color,@padding, @radius) {
+    color: @color;
+    background-color: @bg-color;
+    padding: @padding;
+    border-radius: @radius;
 }

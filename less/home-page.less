@@ -54,8 +54,25 @@
     justify-content: space-between;
 
     .destination {
+      flex-flow: column;
       width: 30%;
+      padding: 0 40px 0 0;
       margin-bottom: 30px;
+
+      p{
+        width: 90%;
+      }
+
+      .btn {
+        display:flex;
+        align-items: center;
+        a {
+          
+          text-align: center;
+          
+          .button-mixin(white, dodgerblue, 10px 55px, 5px);
+        }
+      }
     }
   }
 }// home

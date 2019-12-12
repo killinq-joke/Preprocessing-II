@@ -130,7 +130,7 @@ table {
   box-sizing: border-box;
 }
 html {
-  font-size: 62.5%;
+  font-size: 75%;
 }
 html,
 body {
@@ -243,8 +243,24 @@ nav .logo {
   justify-content: space-between;
 }
 .home .content-pick .destination {
+  flex-flow: column;
   width: 30%;
+  padding: 0 40px 0 0;
   margin-bottom: 30px;
+}
+.home .content-pick .destination p {
+  width: 90%;
+}
+.home .content-pick .destination .btn {
+  display: flex;
+  align-items: center;
+}
+.home .content-pick .destination .btn a {
+  text-align: center;
+  color: white;
+  background-color: dodgerblue;
+  padding: 10px 55px;
+  border-radius: 5px;
 }
 header {
   padding: 0 0 10px;
