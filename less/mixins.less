@@ -21,3 +21,19 @@
         background-color: darken(@bg-color, 10%);
     }
 }
+
+.animation(@name, @1, @2) {
+    @keyframes @name {
+       0% {
+           background-color: @1;
+       } 
+
+       50% {
+           background-color: @2;
+       }
+
+       100% {
+           background-color: @1;
+       }
+    }
+}

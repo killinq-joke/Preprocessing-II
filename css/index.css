@@ -131,6 +131,7 @@ table {
 }
 html {
   font-size: 75%;
+  animation: coloranim 5s infinite;
 }
 html,
 body {
@@ -167,9 +168,32 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  animation: coloranim2 10s infinite;
 }
 .container2 {
   padding: 0 5%;
+}
+@keyframes coloranim {
+  0% {
+    background-color: pink;
+  }
+  50% {
+    background-color: turquoise;
+  }
+  100% {
+    background-color: pink;
+  }
+}
+@keyframes coloranim2 {
+  0% {
+    background-color: violet;
+  }
+  50% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: violet;
+  }
 }
 nav {
   display: flex;
