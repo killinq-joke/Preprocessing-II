@@ -297,11 +297,25 @@ nav .logo {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   flex-flow: column;
   width: 80%;
   padding: 0 40px 0 0;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    padding: 0;
+    width: 70%;
+    align-items: center;
+  }
 }
 .home .content-pick .destination p {
   width: 90%;
@@ -321,6 +335,19 @@ nav .logo {
 }
 .home .content-pick .destination .btn a:hover {
   background-color: #0077ea;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn a {
+    color: white;
+    background-color: dodgerblue;
+    padding: 10px 35%;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  .home .content-pick .destination .btn a:hover {
+    background-color: #0077ea;
+  }
 }
 header {
   padding: 0 0 10px;

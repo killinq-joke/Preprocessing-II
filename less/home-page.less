@@ -92,12 +92,26 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    
+    @media @mobile {
+      display:flex;
+      flex-flow: column;
+      align-items: center;
+        
+         
+    }
 
     .destination {
       flex-flow: column;
       width: 80%;
       padding: 0 40px 0 0;
       margin-bottom: 30px;
+
+      @media @mobile {
+        padding: 0;
+           width:70%;
+           align-items: center;
+      }
 
       p {
         width: 90%;
@@ -111,6 +125,10 @@
           text-align: center;
           
           .button-mixin(white, dodgerblue, 10px 55px, 5px);
+          @media @mobile {
+            .button-mixin(white, dodgerblue, 10px 35%, 10px);
+            
+          }
         }
       }
     }
