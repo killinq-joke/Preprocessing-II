@@ -5,21 +5,55 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
+    @media @mobile {
+      display:flex;
+         flex-flow: column;
+        
+         .one {
+           order: 1;
+         }
 
+         .two {
+           order: 2;
+         }
+
+         .three {
+           order: 3;
+         }
+         
+         p {
+           width: 90%;
+         }
+
+  
+    }
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+      }
 
       img {
         border-radius: 10px;
+        @media @mobile {
+          width: 100%;
+        }
       }
+      
     }
   }
 
@@ -41,6 +75,12 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile {
+      display:flex;
+         flex-flow: column;
+         width: 100%;
+         
+    }
 
     img {
       border-radius: 10px;
@@ -52,10 +92,60 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    
+    @media @mobile {
+      display:flex;
+      flex-flow: column;
+      align-items: center;
+        
+         
+    }
 
     .destination {
-      width: 30%;
+      flex-flow: column;
+      width: 80%;
+      padding: 0 40px 0 0;
       margin-bottom: 30px;
+
+      @media @mobile {
+        padding: 0;
+           width:70%;
+           align-items: center;
+      }
+
+      p {
+        width: 90%;
+      }
+
+      .btn {
+        display:flex;
+        align-items: center;
+        a {
+          
+          text-align: center;
+          
+          .button-mixin(white, dodgerblue, 10px 55px, 5px);
+          @media @mobile {
+            .button-mixin(white, dodgerblue, 10px 35%, 10px);
+            
+          }
+        }
+      }
     }
   }
 }// home
+
+header {
+  padding: 0 0 10px;
+  border-bottom: 1.5px dashed lightgray;
+
+  h1 {
+    font-size: 4.5rem;
+    padding: 10px 0;
+  }
+
+  p {
+    font-size: 2.15rem;
+  }
+
+}
