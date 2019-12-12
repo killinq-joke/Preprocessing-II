@@ -285,6 +285,7 @@ nav .logo {
   .home .content-destination {
     display: flex;
     flex-flow: column;
+    width: 100%;
   }
 }
 .home .content-destination img {
