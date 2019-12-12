@@ -10,14 +10,22 @@ nav {
     .buttons a { 
         .top-button-mixin(black, red);
         font-size: 2.5rem;
-       
         padding: 0 20px;
+        @media @mobile {
+            font-size: 2rem;   
+        }
+        
     }
 
     .logo {
         font-size: 5rem;
         padding: 0 10px;
         font-family: 'Indie Flower', cursive;
+    }
+
+    @media @mobile {
+        flex-flow: column;
+        padding: 10px;
     }
 
 }

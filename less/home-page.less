@@ -5,21 +5,47 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
+    @media @mobile {
+      display:flex;
+         flex-flow: column;
 
+         .one {
+           order: 1;
+         }
+
+         .two {
+           order: 2;
+         }
+
+         .three {
+           order: 3;
+         }
+
+  
+    }
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      
+      @media @mobile {
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
       }
+      
     }
   }
 
@@ -59,7 +85,7 @@
       padding: 0 40px 0 0;
       margin-bottom: 30px;
 
-      p{
+      p {
         width: 90%;
       }
 
@@ -89,4 +115,5 @@ header {
   p {
     font-size: 2.15rem;
   }
+
 }

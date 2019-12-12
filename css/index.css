@@ -168,6 +168,9 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.container2 {
+  padding: 0 5%;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -184,10 +187,21 @@ nav .buttons a {
 nav .buttons a:hover {
   color: red;
 }
+@media (max-width: 500px) {
+  nav .buttons a {
+    font-size: 2rem;
+  }
+}
 nav .logo {
   font-size: 5rem;
   padding: 0 10px;
   font-family: 'Indie Flower', cursive;
+}
+@media (max-width: 500px) {
+  nav {
+    flex-flow: column;
+    padding: 10px;
+  }
 }
 .footer {
   width: 100%;
@@ -206,13 +220,38 @@ nav .logo {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-flow: column;
+  }
+  .home .content-section .one {
+    order: 1;
+  }
+  .home .content-section .two {
+    order: 2;
+  }
+  .home .content-section .three {
+    order: 3;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -261,6 +300,11 @@ nav .logo {
   background-color: dodgerblue;
   padding: 10px 55px;
   border-radius: 5px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.home .content-pick .destination .btn a:hover {
+  background-color: #0077ea;
 }
 header {
   padding: 0 0 10px;
